@@ -1,3 +1,7 @@
 add to config/environments/development.rb
 
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+Use native HTML5 validations
+In config/initalizers/simple_form.rb
+config.browser_validations = true # set to true, when you change these files you need to restart
