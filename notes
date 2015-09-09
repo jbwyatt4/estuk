@@ -7,3 +7,22 @@ In config/initalizers/simple_form.rb
 config.browser_validations = true # set to true, when you change these files you need to restart
 
 text box can use rows to make bigger
+
+cancan
+rails g cancan:ability
+in models/Ability
+user ||= User.new # guest user (not logged in)
+can :read, :all # all vistors can read a book's description
+
+How to check authorization (alone this won't do anything)
+can :manage, Book do |book|
+  book.try(:user) == user
+end
+
+Put into every controller, references above, gives a error looking page
+authorize! :manage, @book
+
+Add in application controller
+rescue_from CanCan::AccessDenied do |exception|
+  redirect_to root_path, notice: "You are not authorized to view this page" # notice root path means root of the controller
+end

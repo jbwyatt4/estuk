@@ -6,6 +6,6 @@
     <%= f.input :description, required: true, label: false, placeholder: "Description", input_html: {class: "form-control", rows: 5} %>
     <br />
     <%= f.input :price, required: true, label: false, placeholder: "Price", input_html: {class: "form-control"} %>
-    <%= f.input :availability, required: true, required: false %>
+    <%= f.input :availability, required: false %>
     <%= f.button :submit, class: "btn btn-primary btn-block" %>
 <% end %>

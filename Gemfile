@@ -47,3 +47,4 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'rake_install_example', ">= 0.1.1", :git => 'git://github.com/jbwyatt4/rake_install_example.git'
 gem 'simple_form'
 gem 'devise'
+gem 'cancan'
