@@ -48,3 +48,4 @@ gem 'rake_install_example', ">= 0.1.1", :git => 'git://github.com/jbwyatt4/rake_
 gem 'simple_form'
 gem 'devise'
 gem 'cancan'
+gem 'paperclip'

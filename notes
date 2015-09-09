@@ -36,3 +36,12 @@ fade-in, literal fade in effect
   </div>
 <% end %>
 before yield
+
+paperclip
+sudo apt-get install imagemagick -y
+rails generate paperclip book image
+rails generate paperclip book resource
+
+models/book
+has_attached_file :image
+has_attached_file :resource
