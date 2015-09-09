@@ -1,5 +1,4 @@
 <%= simple_form_for(@book, html: {class: "form-signin"}) do |f| %>
-  <%= f.error_notification %>
 
     <%= f.input :name, required: true, label: false, placeholder: "Name", input_html: {class: "form-control"} %>
     <%= f.input :author, required: true, label: false, placeholder: "Author's name", input_html: {class: "form-control"} %>
